@@ -10,13 +10,13 @@ public class Main {
                 Al final, imprime "Has terminado de picar X bloques!". */
 
         System.out.println("¿Cuántos bloques quieres picar?");
-int cuantosBloques= lector.nextInt();
-for (int i=1; i<=cuantosBloques; i++) {
+int bloques= lector.nextInt();
+for (int i=1; i<=bloques; i++) {
     {
         System.out.println("Picando bloque " + i);
     }
 }
-    System.out.println("\nHas terminado de picar " + cuantosBloques + " bloques");
+    System.out.println("\nHas terminado de picar " + bloques + " bloques");
 
     }
 }

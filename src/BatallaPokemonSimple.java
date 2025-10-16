@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class BatallaPokemonSimple {
@@ -10,11 +11,29 @@ Mientras ambos tengan vida (while), resta daño en cada turno y muestra el resul
 Usa condicionales para determinar quién gana: "Tu Pokémon ha ganado!" o "Has perdido...".*/
 
         System.out.println("Bienvenido a esta batalla Pokemon entre Pikachu y Squirtle. Inserta aquí los puntos de vida de ambos Pokemon");
+        System.out.println("Vida Pikachu:");
         int hpPikachu = lector.nextInt();
+        System.out.println("Vida Squirtle:");
         int hpSquirtle = lector.nextInt();
-        int hpPokemon = lector.nextInt();
-
-
-
+        int dañoPikachu = 5;
+        int dañoSquirtle = 3;
+        boolean turno1 = true;
+        while (hpPikachu > 0 && hpSquirtle > 0) {
+            if (turno1) {
+                System.out.println("Es el turno de Pikachu. Le quita " + dañoPikachu + " puntos de vida a Squirtle");
+                hpSquirtle = hpSquirtle - dañoPikachu;
+                System.out.println("Le quedan " + hpSquirtle + " puntos de vida a Squirtle");
+            } else {
+                System.out.println("Es el turno de Squirtle. Le quita " + dañoSquirtle + " puntos de vida a Pikachu");
+                hpPikachu = hpPikachu - dañoSquirtle;
+                System.out.println("Le quedan " + hpPikachu + " puntos de vida a Pikachu");
+            }
+          turno1 = !turno1;
+        }
+        if (hpPikachu <= 0) {
+            System.out.println("Has perdido...");
+        } else if (hpSquirtle <= 0) {
+            System.out.println("Tu Pokémon ha ganado!");
+        }
     }
 }
