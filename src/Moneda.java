@@ -26,7 +26,7 @@ public class Moneda {
                 cruces++;
             }
         }
-        System.out.println("\n++++++RESULTADOS FINALES++++++");
+        System.out.println("\n-------RESULTADOS FINALES-------");
         System.out.println(caras+" caras");
         System.out.println(cruces+" cruces");
 
