@@ -9,7 +9,7 @@ public class Dado {
     }
     public static void main (String[] args) {
         for (int i=1;i<=10;i++) {
-            System.out.println("Lanzamiento " + i + ": ");
+            System.out.println("Lanzamiento " + i + ":");
             lanzarDado();
         }
 

@@ -15,17 +15,17 @@ Usa condicionales para determinar quién gana: "Tu Pokémon ha ganado!" o "Has p
         int hpPikachu = lector.nextInt();
         System.out.println("Vida Squirtle:");
         int hpSquirtle = lector.nextInt();
-        int dañoPikachu = 5;
-        int dañoSquirtle = 3;
+        int danhoPikachu = 5;
+        int danhoSquirtle = 3;
         boolean turno1 = true;
         while (hpPikachu > 0 && hpSquirtle > 0) {
             if (turno1) {
-                System.out.println("Es el turno de Pikachu. Le quita " + dañoPikachu + " puntos de vida a Squirtle");
-                hpSquirtle = hpSquirtle - dañoPikachu;
+                System.out.println("Es el turno de Pikachu. Le quita " + danhoPikachu + " puntos de vida a Squirtle");
+                hpSquirtle = hpSquirtle - danhoPikachu;
                 System.out.println("Le quedan " + hpSquirtle + " puntos de vida a Squirtle");
             } else {
-                System.out.println("Es el turno de Squirtle. Le quita " + dañoSquirtle + " puntos de vida a Pikachu");
-                hpPikachu = hpPikachu - dañoSquirtle;
+                System.out.println("Es el turno de Squirtle. Le quita " + danhoSquirtle + " puntos de vida a Pikachu");
+                hpPikachu = hpPikachu - danhoSquirtle;
                 System.out.println("Le quedan " + hpPikachu + " puntos de vida a Pikachu");
             }
           turno1 = !turno1;

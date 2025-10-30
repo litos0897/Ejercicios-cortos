@@ -4,7 +4,7 @@ Desde el main, pide una temperatura al usuario y muestra el resultado.*/
 
 import java.util.Scanner;
 
-public class conversionTemperaturas {
+public class    conversionTemperaturas {
     public static void celsiusAFahrenheit(int celsius) {
         int fahrenheit = (celsius*9/5) + 32;
         System.out.println("La temperatura en Fahrenheit es de " + fahrenheit + " grados");

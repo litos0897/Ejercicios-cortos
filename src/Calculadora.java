@@ -1,10 +1,9 @@
 /*Crea 4 funciones estáticas:
-
-sumar(int a, int b)
-restar(int a, int b)
-multiplicar(int a, int b)
-dividir(double a, double b)
-        Desde main, pide dos números al usuario y una operación (por ejemplo: “+”, “-”, “*”, “/”),
+    sumar(int a, int b)
+    restar(int a, int b)
+    multiplicar(int a, int b)
+    dividir(double a, double b)
+Desde main, pide dos números al usuario y una operación (por ejemplo: “+”, “-”, “*”, “/”),
 usa un if o switch para decidir qué función llamar,
 y muestra el resultado.*/
 
@@ -48,13 +47,7 @@ public class Calculadora {
         } else if (operacion.equals("/")) {
             dividir(numero1, numero2);
         } else {
-            System.out.println("Operación no valida");
+            System.out.println("Operación no válida");
         }
     }
 }
-
-
-
-
-
-
