@@ -13,16 +13,15 @@ public class ObjetosMinecraft {
         objeto[3]="bloques de piedra";
         objeto[4]="antorchas";
 
-        String[]cantidad = new String[5];
-        cantidad[0]="1";
-        cantidad[1]="2";
-        cantidad[2]="3";
-        cantidad[3]="4";
-        cantidad[4]="5";
+        int[]cantidad = new int[5];
+        cantidad[0]=1;
+        cantidad[1]=2;
+        cantidad[2]=3;
+        cantidad[3]=4;
+        cantidad[4]=5;
 
         System.out.println("Tienes en tu inventario: ");
-        int i;
-        for (i = 0; i < 4; i++) {
+        for (int i = 0; i < objeto.length; i++) {
 
             System.out.println(" - "+cantidad[i]+" "+objeto[i]);
         }
