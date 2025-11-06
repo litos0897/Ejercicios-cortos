@@ -15,7 +15,7 @@ public class capturaPokemon {
             pokemon[i] = pokemonCapturado;
     }
         for(int i=pokemon.length-1; i>=0; i--){
-            int numeroCaptura=i+1;
+            int numeroCaptura=i;
             System.out.println("Posición "+numeroCaptura+": "+pokemon[i]);
         }
     }
